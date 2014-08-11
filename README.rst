@@ -18,6 +18,16 @@ Available states
 
 Includes debian.sources/*
 
+``debian.dash``
+----------
+
+Enables dash as System Shell
+
+``debian.dash.disable``
+----------
+
+Disables dash as System Shell
+
 ``debian.sources``
 ------------------
 
