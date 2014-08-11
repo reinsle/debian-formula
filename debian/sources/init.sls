@@ -1,3 +1,6 @@
+include:
+  - debian.tools
+
 # installes dependend on installed os the needed sources.list
 /etc/apt/sources.list:
   file.managed:
@@ -5,11 +8,7 @@
     - user: root
     - group: root
     - mode: 0644
-
-sources_update:
-  cmd.wait:
-    - name: apt-get update
-    - watch:
-      - file: /etc/apt/sources.list
-    - require:
-      - file: /etc/apt/sources.list
+    - require_in:
+      - cmd: apt-get_update
+    - watch_in:
+      - cmd: apt-get_update

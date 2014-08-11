@@ -1,5 +1,5 @@
 include:
-  - debian.sources
+  - debian.tools
 
 # installs einsle.list debian repository
 /etc/apt/sources.list.d/einsle.list:
@@ -9,9 +9,9 @@ include:
     - group: root
     - mode: 0644
     - require_in:
-      - cmd: sources_update
+      - cmd: apt-get_update
     - watch_in:
-      - cmd: sources_update
+      - cmd: apt-get_update
 
 # installs einsle apt-key
 wget -q -O- "http://debian.einsle.de/robert_einsle_signing.asc" | apt-key add -:
@@ -20,6 +20,6 @@ wget -q -O- "http://debian.einsle.de/robert_einsle_signing.asc" | apt-key add -:
     - require:
       - file: /etc/apt/sources.list.d/einsle.list
     - require_in:
-      - cmd: sources_update
+      - cmd: apt-get_update
     - watch_in:
-      - cmd: sources_update
+      - cmd: apt-get_update

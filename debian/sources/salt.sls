@@ -9,9 +9,9 @@ include:
     - group: root
     - mode: 0644
     - require_in:
-      - cmd: sources_update
+      - cmd: apt-get_update
     - watch_in:
-      - cmd: sources_update
+      - cmd: apt-get_update
 
 # installs salt apt-key
 wget -q -O- "http://debian.saltstack.com/debian-salt-team-joehealy.gpg.key" | apt-key add -:
@@ -20,6 +20,6 @@ wget -q -O- "http://debian.saltstack.com/debian-salt-team-joehealy.gpg.key" | ap
     - require:
       - file: /etc/apt/sources.list.d/salt.list
     - require_in:
-      - cmd: sources_update
+      - cmd: apt-get_update
     - watch_in:
-      - cmd: sources_update
+      - cmd: apt-get_update
