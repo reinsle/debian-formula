@@ -1,0 +1,13 @@
+# !!! This file is managed using salt !!!
+
+# debian package repository for wheezy
+deb http://ftp.de.debian.org/debian wheezy main contrib non-free
+deb-src http://ftp.de.debian.org/debian wheezy main contrib non-free
+
+# debian security updates for wheezy
+deb http://security.debian.org/ wheezy/updates main contrib non-free
+deb-src http://security.debian.org/ wheezy/updates main contrib non-free
+
+# debian wheezy updates
+deb http://ftp.de.debian.org/debian wheezy-updates main contrib non-free
+deb-src http://ftp.de.debian.org/debian wheezy-updates main contrib non-free
