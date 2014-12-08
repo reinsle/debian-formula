@@ -1,6 +1,7 @@
 include:
   - debian.tools
 
+{% if grains['cpuarch'] in 'x86', 'x86_64' %}
 # installes dependend on installed os the needed sources.list
 /etc/apt/sources.list:
   file.managed:
@@ -12,3 +13,4 @@ include:
       - cmd: apt-get_update
     - watch_in:
       - cmd: apt-get_update
+{% endif %}
