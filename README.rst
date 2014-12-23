@@ -33,13 +33,8 @@ Disables dash as System Shell
 
 Installs base debian package repository and updates package list.
 
-``debian.sources.einsle``
--------------------------
-
-Installs einsle debian package repository ans installs matching apt-key
-
 ``debian.sources.salt``
 -----------------------
 
-Installs salt debian package repository ans installs matching apt-key
+Installs salt debian package repository and installs matching apt-key
 
