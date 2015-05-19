@@ -1,0 +1,5 @@
+# !!! This file is managed using salt !!!
+
+# debian package repository for salt
+deb http://debian.saltstack.com/debian jessie-saltstack main
+deb-src http://debian.saltstack.com/debian jessie-saltstack main
