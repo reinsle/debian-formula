@@ -1,5 +1,6 @@
 # !!! This file is managed using salt !!!
 
 # debian package repository for salt
-deb http://debian.saltstack.com/debian jessie-saltstack main
-deb-src http://debian.saltstack.com/debian jessie-saltstack main
+deb http://repo.saltstack.com/apt/debian/8/amd64/latest jessie main
+deb-src http://repo.saltstack.com/apt/debian/8/amd64/latest jessie main
+

@@ -1,5 +1,5 @@
 # !!! This file is managed using salt !!!
 
 # debian package repository for salt
-deb http://debian.saltstack.com/debian wheezy-saltstack main
-deb-src http://debian.saltstack.com/debian wheezy-saltstack main
+deb http://repo.saltstack.com/apt/debian/8/amd64/latest wheezy main
+deb-src http://repo.saltstack.com/apt/debian/8/amd64/latest wheezy main
